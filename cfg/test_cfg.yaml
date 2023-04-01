@@ -1,0 +1,21 @@
+dropout: 0.1
+chara_nums: 6625
+diffusion_steps: 1000
+noise_schedule: 'linear'
+image_size: 80
+num_channels: 128
+num_res_blocks: 3
+batch_size: 5
+num_samples: 10
+attention_resolutions: '40, 20, 10'
+use_ddim: True
+timestep_respacing: ddim25
+stroke_path: './char_stroke.txt'
+model_path: 'path_to_trained_model'
+sty_img_path: 'path_to_reference_image'
+total_txt_file: './total_chn.txt'
+gen_txt_file: './gen_char.txt'
+img_save_path: './result'
+classifier_free: True
+cont_scale: 3.0
+sk_scale: 3.0

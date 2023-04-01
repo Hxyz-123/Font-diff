@@ -1,0 +1,19 @@
+data_dir: 'path_to_dataset/'
+chara_nums: 6625
+diffusion_steps: 1000
+noise_schedule: 'linear'
+image_size: 80
+num_channels: 128
+num_res_blocks: 3
+lr: 0.0001
+batch_size: 16
+log_interval: 250
+save_interval: 30000
+train_steps: 420000
+attention_resolutions: '40, 20, 10'
+sty_encoder_path: './pretrained_models/chinese_styenc.ckpt'
+model_save_dir: './trained_models'
+stroke_path: './chinese_stroke.txt'
+classifier_free: False
+total_train_step: 800000
+resume_checkpoint: ""
