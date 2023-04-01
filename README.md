@@ -146,4 +146,4 @@ python sample.py --cfg_path cfg/test_cfg.yaml
 
 ------
 
-This project is based on [guided-diffusion]([openai/guided-diffusion (github.com)](https://github.com/openai/guided-diffusion)) and [DG-Font](https://github.com/ecnuycxie/DG-Font).
+This project is based on [openai/guided-diffusion](https://github.com/openai/guided-diffusion) and [DG-Font](https://github.com/ecnuycxie/DG-Font).
