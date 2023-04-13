@@ -1,4 +1,4 @@
-## Diff-Font
+# Diff-Font
 
 ------
 
@@ -139,6 +139,12 @@ sk_scale: 3.0 # stroke guidance sacle
 ```python
 python sample.py --cfg_path cfg/test_cfg.yaml
 ```
+
+
+
+## Visual display
+
+![](.\result_img\result.png)
 
 
 
