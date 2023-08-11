@@ -144,7 +144,7 @@ python sample.py --cfg_path cfg/test_cfg.yaml
 
 ## Visual display
 
-![](.\result_img\result.png)
+![result_img](https://github.com/Hxyz-123/Font-diff/blob/main/result_img/result.png)
 
 
 
