@@ -124,7 +124,7 @@ Key setting for testing:
 chara_nums: 6625
 num_samples: 10
 stroke_path: './char_stroke.txt'
-model_path: 'path_to_trained_model'
+model_path: 'path_to_trained_model, suggest using the ema model'
 sty_img_path: 'path_to_reference_image'
 total_txt_file: './total_chn.txt'
 gen_txt_file: './gen_char.txt' # txt file for generation
@@ -145,6 +145,20 @@ python sample.py --cfg_path cfg/test_cfg.yaml
 ## Visual display
 
 ![](.\result_img\result.png)
+
+
+
+## FAQ
+
+**1. The generated characters content are incorrect**.
+
+Please check whether each font in the dataset used for training contains all characters in the '.txt ' file.
+
+**2. The generated character images are unclear and structurally incomplete.**
+
+This phenomenon indicates that the model training is not sufficient. Please continue to train the model.
+
+
 
 
 
