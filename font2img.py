@@ -65,13 +65,16 @@ for idx, (label, item) in enumerate(zip(range(len(all_image_paths)),all_image_pa
     font_name = item.split('/')[-1].split('.')[0]
     chars = get_char_list_from_ttf(item)  #
     img_cnt = 0
+    filter_cnt = 0
     for (chara, cnt) in zip(characters, range(len(characters))):
         img = draw_example(chara, src_font, args.img_size, (args.img_size-args.chara_size)/2, (args.img_size-args.chara_size)/2)
         path_full = os.path.join(args.save_path, 'id_%d'%(label))
         if not os.path.exists(path_full):
             os.mkdir(path_full)
-        if np.sum(np.array(img) / 255.) < 18000:
+        if args.img_size * args.img_size * 3 - np.sum(np.array(img) / 255.) < 100:
+            filter_cnt += 1
+        else:
             img_cnt += 1
             img.save(os.path.join(path_full, "%05d.png" % (cnt)))
-
+    print(filter_cnt,' characters are missing in this font')
 
