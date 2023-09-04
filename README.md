@@ -64,7 +64,7 @@ python font2img.py --ttf_path ttf_folder --chara total_chn.txt --save_path save_
   ```yaml
   data_dir: 'path_to_dataset/'
   chara_nums: 6625  # num of characters
-  train_steps: 420000 # conditional training steps
+  train_step: 420000 # conditional training steps
   sty_encoder_path: './pretrained_models/chinese_styenc.ckpt' # path to pre-trained style encoder
   model_save_dir: './trained_models' # path to save trained models
   stroke_path: './chinese_stroke.txt' # encoded strokes
@@ -98,7 +98,7 @@ After conditional training , we suggest an additional fine-tuning step.
   model_save_dir: './trained_models' # path to save trained models
   stroke_path: './chinese_stroke.txt' # encoded strokes
   classifier_free: True  # True for fine-tuning
-  total_train_steps: 800000 # total number of training steps for conditional training and fine-tuning
+  total_train_step: 800000 # total number of training steps for conditional training and fine-tuning
   resume_checkpoint: "./trained_models/model420000.pt" # path to conditional trained model, required for fine-tuning
   ```
 
